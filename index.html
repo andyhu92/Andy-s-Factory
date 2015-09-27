@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+	<meta charset="utf-8" />
+	
+	<title> Andy's Factory! </title>
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+	<link rel="stylesheet" href="css/game.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/backTop.css" >
+	<link rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="container header">
+		<div class="row">
+			<div class="col-md-3 col-xs-2  col-xs-offset-5 col-md-offset-0">
+		       <a href="index.html" title="Home"><img src="image/logo.png" class="logo" alt="web logo"></a>
+		    </div><!-- md-3 -->
+		    <div class="col-md-offset-1 col-md-8 col-xs-11">
+		      <ul class="navigation">
+		      	<li><a href='index.html' title="Home">Home <span class="glyphicon glyphicon-home"></span></a></li>
+			    <li><a href="#/portfolio" id="portfolioNav">Portfolio <span class="glyphicon glyphicon-th-large portfolio"></span></a></li>
+			    <li><a href="#/game" id="gameNav">Game <span class="glyphicon glyphicon-bishop game"></span></a></li>
+			    <li><a href="#/gallery" id="galleryNav">Gallery <span class="glyphicon glyphicon-picture gallery"></span></a></li>
+			    <li><a href="#/about" id="aboutNav">About <span class="glyphicon glyphicon-user about"></span></a></li>
+		      </ul>
+		    </div><!-- md-7 -->
+		</div>
+	</div>
+
+   <div class="mainBody container-fluid" ng-app="myApp">
+    <div ng-view></div>
+    	   
+    </div>
+    <h1 class="text-center container">
+         <noscript>Your browswer does not support or disenabled Javascript. You can enable JavaScript in your browser settings.</noscript>
+    </h1>
+    <div class="footer container">
+    <img src="image/Mushroom.png",alt="draggable-image" id="mushroom"  class="ui-widget-content hidden-md hidden-md hidden-sm hidden-xs" title="drag me!" style="cursor:pointer" >
+    <img src="image/mario_flower.png",alt="draggable-image" id="marioFlower"  class="ui-widget-content hidden-md hidden-sm hidden-xs" title="drag me!"style="cursor:pointer"  >
+    <a id='backTop' title="back to top">Back To Top</a>
+   
+    <p style="float:left"class="copy"></p>
+    <p style="float:right"><span class="glyphicon glyphicon-envelope"></span>  alreadyusedagain@gmail.com </p>
+
+    </div>
+<!-- Javascript Source -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="vendor/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<script src="vendor/jquery.backTop.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>	
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="application/googlemap.js"></script>
+<script src="application/jquery-app.js"></script>
+<script src="application/angular-app.js"></script>
+<script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="application/bootstrap-image-gallery.min.js"></script>
+<script src="game/colorGameController.js"></script>
+<script src="gallery/galleryController.js"></script>
+<script src="application/html5_api.js"></script>
+
+
+
+
+</body>
+</html>	

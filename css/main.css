@@ -1,0 +1,118 @@
+/* Header Section*/
+img.logo{
+   float:left;
+   opacity: 0.6;
+}
+img.logo:hover{
+	opacity: 1;
+}
+.navigation{
+	float:right;
+	padding-top:70px;
+}
+
+.navigation li{
+	font-size:160%;
+	font-family: Arial, Helvetica, sans-serif;
+	display:inline;
+	list-style:none;
+	padding-right:35px;
+}
+a{
+	color:black;
+}
+.navigation a:link,
+.navigation a:visited{
+    text-decoration:none;
+}
+.navigation a:hover{
+	color:red; text-shadow:1px 1px 1px #d3d3d3;
+}
+div.header{
+	border-bottom: 3px groove black;
+	padding-bottom: 15px;
+}
+/* Portfolio */
+div.portfolio a:link,
+div.portfolio a:visited{
+    text-decoration:none;
+}
+div.portfolio a:hover{
+	color:#000000; text-shadow:1px 1px 2px lightgray;
+}
+div.portfolio img{
+float:left; 
+margin-right:20px;
+height:240px;
+}
+/* Comment */
+div.fb-comments{
+	display:block;
+	margin:50px;
+}
+/*Glyphicon color*/
+span.portfolio{
+	color:#19FF19
+}
+span.game{
+	color:#1212FF;
+}
+span.gallery{
+	color:#FFFF19;
+}
+span.about{
+	color:#FF0202;
+}
+/* -- */
+
+a.current-nav{
+	color:red;
+	text-shadow:1px 1px 2px #eee;
+}
+/* Google Map*/
+#googleMap{
+	margin:20px;
+	width:450px;
+}
+/* -- */
+p#readMore{
+	cursor: pointer;
+}
+div.dummy{
+	display:none;
+}
+div.dummy span{
+	font-style: italic;
+	font-size:16px;
+}
+div.footer{
+    border-top:2px groove black;
+}
+div.mainBody{
+	padding:30px;
+	width:800px;
+	text-align: justify;
+}
+img.image_center{
+	display:block;
+	margin:0 auto 0 auto;
+}
+div.intro h1,div.intro h2,div.intro h3{
+	text-align: center;
+}
+
+div.intro img{
+	cursor:pointer;
+	margin-bottom: 20px;
+}
+div.intro_art,div.intro_game{
+	visibility: hidden;
+}
+div.intro_other{
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+	visibility:hidden;
+}
+div.colorpicker h1{
+	cursor:pointer;
+}

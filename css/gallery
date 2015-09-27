@@ -1,0 +1,9 @@
+div.introphoto{
+    background:url("../image/gallery1.jpg") ;
+    border-style: solid;
+    border-width: 14px 14px 14px;
+    -moz-border-image: url(../image/border1.png) 34 27 27 repeat;
+    -webkit-border-image: url(../image/border1.png) 34 27 27 repeat;
+    -o-border-image: url(../image/border1.png) 34 27 27 repeat;
+    border-image: url(../image/border1.png) 34 27 27 fill repeat;
+}

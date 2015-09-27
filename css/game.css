@@ -1,0 +1,45 @@
+
+.gamediv{
+border:1px solid black;
+display:inline-block;
+width:180px;
+height:260px;
+}
+.colorgame{
+float:left;
+width:160px;
+margin-left:0px;
+margin-right:45px;
+}
+.gameInstruction{
+float:right;
+width:300px;
+background-image:url('../image/gamebackground.jpg');
+background-size:100% 100%;
+color:white;
+padding:5px;
+}
+input[type=range]{
+width:340px;
+}
+.colorbar{
+width:340px;
+}
+.showAns{
+width:300px;
+float:right;
+}
+#mushroom{
+	display:none;
+	position:absolute;
+	top:250px;
+	left:50px;
+}
+#marioFlower{
+	display:none;
+	position:absolute;
+	top:250px;
+	right:20px;
+	width:200px;
+	height:200px;
+}

@@ -1,0 +1,37 @@
+div.introphoto{
+    background:url("../image/galleryback1.jpg") ;
+    font-weight: bold;
+    padding:20px;
+    border-style: solid;
+    border-width: 14px 14px 14px;
+    -moz-border-image: url(../image/border1.png) 34 27 27 repeat;
+    -webkit-border-image: url(../image/border1.png) 34 27 27 repeat;
+    -o-border-image: url(../image/border1.png) 34 27 27 repeat;
+    border-image: url(../image/border1.png) 34 27 27 fill repeat;
+}
+div.introphoto ul{
+	font-size:1.2em;
+
+}
+div.introphoto h1{
+	text-align: center;
+	color:yellow;
+	text-shadow:1px 1px 2px black;
+	margin-bottom: 30px;
+	cursor:pointer;
+}
+h2.welcome{
+	border-bottom: 2px solid lightgray;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+img.gallery_sign{
+	width: 100px;
+	height:100px;
+	padding:10px;
+	float: middle;
+}
+button.fullScreen, button.borderView{
+	margin-right:20px;
+}
+

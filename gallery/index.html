@@ -1,0 +1,72 @@
+<div class="introphoto">
+    <h1><span class="glyphicon glyphicon-arrow-right" style="color:#EEE"></span> !Unfamous Gallery <span class="glyphicon glyphicon-arrow-left" style="color:#EEE"></span></h1>
+     <p>  I'm a big fan of Art and here comes my personal art show!
+     I'm a little bit addicted to Janpanese manga and <b><i>One Piece</i></b> is my favorite one! In my spare time I enjoy painting and also that's how these art works came from and why so many of them are characters in <b><i>One Piece</i></b>! </p>
+     <ol> <h3>Gallery Info:</h3>
+        <li> Traditional painting section: Pencil (color), eraser.
+        <li> Digital painting section: Tablet, multiple painting software, Photoshop.
+        <li> Photoshop Section: Purely Photoshop.
+        <li> Photograph Section: Iphone camera.
+    </ol>
+    <div class="sign">
+        <img src="image/no_smoking_sign.png" alt="no-smoking sign" class="gallery_sign">
+        <img src="image/nobiking.png" alt="no-biking sign" class="gallery_sign">
+        <img src="image/nofire.png" alt="no-fire sign" class="gallery_sign">
+    </div>
+     <br>
+     Click image below to enter. <br>Thanks for visiting my gallery! <br><hr>
+     
+    <button onclick="Donate()"class="btn btn-lg btn-success donate">Donate <span class="glyphicon glyphicon-leaf"> </span></button>
+    <button onclick="cancelDonate()"class="btn btn-lg btn-warning donate" style="margin-left:20px">Clear Donation <span class="glyphicon glyphicon-remove"> </span></button>
+    <p id="donate" style="margin-top:20px;width:300px"></p>
+    <p id="donate_number" style="width:50%"></p>
+    
+ </div>
+
+
+<br>
+
+<div id="links" style="clear:both" ng-controller="galleryController">
+    <a href="image/louvre.jpg" title="gallery" data-gallery>
+        <img src="image/thumbnails/louvre.jpg" style="display:block;margin-left:auto;margin-right:auto" >
+    </a>
+    <a ng-repeat="photo in photos" ng-href="{{photo.src}}" title="{{photo.title}}" data-gallery>
+    </a>
+ 
+</div>
+    	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blue-imp gallery-->
