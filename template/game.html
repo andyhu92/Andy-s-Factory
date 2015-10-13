@@ -1,7 +1,7 @@
   
-<div class="colorpicker" ng-controller="gameController">
-        <h1 style="font-size:3.6em"> Game Zone! </h1>
-        <b><p> I'm a 100% gamer and now I'm trying to design and create some simple game by myself!<br>I'll add more games to here! </p></b>
+<div class="colorpicker" ng-controller="gameCtrl">
+        <h1 style="font-size:3.6em" class="text-center animated bounceInDown"> Game Zone! </h1>
+<hr>
 
 <div class="gamediv"style="background-color:rgb({{g_red}},{{g_green}},{{g_blue}})">
 </div>
@@ -34,7 +34,7 @@
 </div>
 </div>
 <br>
-<input type="button" class="button btn btn-warning colorgame"ng-click="generateValue()" value="Generate!">
-<input type="button" class="button btn btn-primary colorgame"ng-click="submitValue()" value="Check!">
+<input type="button" class="btn btn-warning colorgame"ng-click="generateValue()" value="Generate!">
+<input type="button" class="btn btn-primary colorgame"ng-click="submitValue()" value="Check!">
 <input type="button" class="btn btn-success showAns"ng-click="showAnswer()" value="Show Answer!">
 </div>

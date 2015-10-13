@@ -1,0 +1,11 @@
+<div ng-controller="portfolioCtrl" >
+
+<div class="portfolio" ng-repeat="item in list" av-animation="{{item.view}}" ng-class="{'fadeInLeft':$first,'fadeInRight':$index==1,'aniview':$index>1,'animated':$index<=1}">
+	<img ng-src="{{item.src}}" alt="{{alt}}">
+	<a ng-href="{{item.link}}"target="_blank"><h2><span class="{{item.gly}}"></span> {{item.title}} </h2></a><hr>
+	<p>{{item.detail}}</p>
+	<br><hr>
+</div>
+
+</div>
+

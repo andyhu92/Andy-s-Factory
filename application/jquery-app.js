@@ -10,30 +10,18 @@ $(document).ready(function(){
   	$(".navigation li a.current-nav").removeClass("current-nav");
   });
  //Add effect for index page
+$(window).load(
+  function(){
+     var options = {
+    animateThreshold: 0,
+    scrollPollInterval: 50
+};
+$('.aniview').AniView(options);
+  })
  $("div.mainBody").on("click","#factory",function(){
   if($("#factory").attr("src") === "image/factory_fill.png") $("#factory").attr("src","image/factory.png");
   else $("#factory").attr("src","image/factory_fill.png");
  });
-   $(window).on('scroll.intro',function () {
-    if($(window).scrollTop()>= $("div.intro_art").height()-150){
-      $("div.intro_art").css("visibility","visible").hide().fadeIn();
-      $(this).off('scroll.intro');
-    };
-  });
-    $(window).on('scroll.game',function () {
-    if($(window).scrollTop()>= $("div.intro_game").height()+100){
-      $("div.intro_game").css("visibility","visible").hide().fadeIn();
-      $(this).off('scroll.game');
-    }; 
-    });
-        $(window).on('scroll.other',function () {
-    if($(window).scrollTop()>= $("div.intro_other").height()+750){
-      $("div.intro_other").css("visibility","visible").hide().fadeIn();
-      $(this).off('scroll.other');
-    }; 
-    });
-  
-  
 
 
 //game effect

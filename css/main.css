@@ -8,7 +8,7 @@ img.logo:hover{
 }
 .navigation{
 	float:right;
-	padding-top:70px;
+	padding-top:30px;
 }
 
 .navigation li{
@@ -25,9 +25,7 @@ a{
 .navigation a:visited{
     text-decoration:none;
 }
-.navigation a:hover{
-	color:red; text-shadow:1px 1px 1px #d3d3d3;
-}
+
 div.header{
 	border-bottom: 3px groove black;
 	padding-bottom: 15px;
@@ -44,6 +42,14 @@ div.portfolio img{
 float:left; 
 margin-right:20px;
 height:240px;
+}
+div.portfolio h2{
+	text-align: left;
+	-webkit-transition: all 0.3s ease-in-out; /* Safari */
+    transition: all 0.3s ease-in-out;
+}
+div.portfolio h2:hover{
+	letter-spacing: 1px;
 }
 /* Comment */
 div.fb-comments{
@@ -102,16 +108,12 @@ div.intro h1,div.intro h2,div.intro h3{
 }
 
 div.intro img{
-	cursor:pointer;
 	margin-bottom: 20px;
 }
-div.intro_art,div.intro_game{
-	visibility: hidden;
-}
+
 div.intro_other{
 	border-bottom: 2px solid black;
 	padding-bottom: 20px;
-	visibility:hidden;
 }
 div.colorpicker h1{
 	cursor:pointer;

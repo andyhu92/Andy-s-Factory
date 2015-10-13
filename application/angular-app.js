@@ -1,15 +1,15 @@
 var app = angular.module("myApp",['ngRoute'])
 app.config(function($routeProvider){
   $routeProvider.when('/index.html',{
-    templateUrl:"index/index.html"
+    templateUrl:"template/index.html"
   }).when('/game',{
-    templateUrl: "game/index.html"
+    templateUrl: "template/game.html"
   }).when('/about',{
-  	templateUrl: "about/index.html"
+  	templateUrl: "template/about.html"
   }).when('/gallery',{
-  	templateUrl: "gallery/index.html"
+  	templateUrl: "template/gallery.html"
   }).when('/portfolio',{
-  	templateUrl: "portfolio/index.html"
+  	templateUrl: "template/portfolio.html"
   })
   .otherwise({
 redirectTo: "index.html"
@@ -19,7 +19,7 @@ redirectTo: "index.html"
 app.directive("googleMap",function(){
   return{
     restrict:'E',
-    templateUrl: 'application/googlemap.html',
+    templateUrl: 'template/googlemap.html',
     link:function(){
       $("button.mapShow").click(function(){
    

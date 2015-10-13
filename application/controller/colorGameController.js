@@ -1,4 +1,4 @@
-app.controller('gameController',function($scope){
+app.controller('gameCtrl',function($scope){
 $scope.red = $scope.green = $scope.blue = 0;
 $scope.g_red = $scope.g_green = $scope.g_blue =255;
 $scope.generateValue=function(){

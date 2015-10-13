@@ -1,4 +1,4 @@
-app.controller("galleryController",function($scope){
+app.controller("galleryCtrl",function($scope){
    $scope.photos = [{src:"image/traditional/traditional.jpg", title:"traditional-art tag"},
                  {src:"image/traditional/dragon.jpg", title:"dragon sketch"},
                  {src:"image/traditional/dragon1.jpg", title:"dragon sketch"},
