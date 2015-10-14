@@ -38,6 +38,7 @@ float:right;
 -o-transition:all 0.4s;
 transition:all 0.4s;
 position:relative;
+overflow: hidden;
 }
 .showSpan{
 	position: absolute;
