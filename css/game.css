@@ -10,6 +10,10 @@ float:left;
 width:160px;
 margin-left:0px;
 margin-right:45px;
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+-o-transition:all 0.4s;
+transition:all 0.4s;
 }
 .gameInstruction{
 float:right;
@@ -27,7 +31,34 @@ width:340px;
 }
 .showAns{
 width:300px;
+height:34px;
 float:right;
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+-o-transition:all 0.4s;
+transition:all 0.4s;
+position:relative;
+}
+.showSpan{
+	position: absolute;
+	left:25%;
+	-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+-o-transition:all 0.4s;
+transition:all 0.4s;
+}
+.showSpan.top{
+    top:5px;	
+}
+.showSpan.bottom{
+    top:34px;
+}
+.showAns:hover .top{
+	top:-34px;
+}
+.showAns:hover .bottom{
+	top:5px;
+	left:35%;
 }
 #mushroom{
 	display:none;

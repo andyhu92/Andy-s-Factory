@@ -18,10 +18,12 @@ $(window).load(
 };
 $('.aniview').AniView(options);
   })
- $("div.mainBody").on("click","#factory",function(){
-  if($("#factory").attr("src") === "image/factory_fill.png") $("#factory").attr("src","image/factory.png");
-  else $("#factory").attr("src","image/factory_fill.png");
+ $("div.mainBody").on("mouseenter","#factory",function(){
+  $("#factory").attr("src","image/factory_fill.png");
+}).on("mouseleave","#factory",function(){
+   $("#factory").attr("src","image/factory.png");
  });
+ 
 
 
 //game effect
@@ -70,7 +72,7 @@ $("#mushroom,#marioFlower").on("mouseenter",function(){
   	$("div.introphoto h2.welcome").remove();
   	$("div.introphoto h1 span").remove();
   	$("div.introphoto h1").animate({fontSize:"60px"},'fast');
-  	var text="<h2 class='welcome' style='text-align:center'><em> Welcome! </em></h2>"
+  	var text="<h2 class='welcome text-center'><em> Welcome! </em></h2>"
   	$("div.introphoto h1").after(text);
   	$("div.sign").animate({marginLeft:"28%"},'fast');
   });

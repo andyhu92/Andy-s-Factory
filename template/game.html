@@ -11,7 +11,7 @@
 	<h3 style="text-align:center"> Color Picker! </h3>
 	<h4><strong> Rules: </strong></h4>
 	<p>1. Click on 'Generate' to generate a random color background for the first box.</p>
-	<p>2. Adjust the scroll bar to try to make the second box have same color as first one!</p>
+	<p>2. Adjust the scroll bar to let the second box match the color of first one!</p>
         <h4><strong> Scores: </strong></h4>
         <ol>
         <li> Totally Match!!! Unbelievable!!! </li>
@@ -36,5 +36,8 @@
 <br>
 <input type="button" class="btn btn-warning colorgame"ng-click="generateValue()" value="Generate!">
 <input type="button" class="btn btn-primary colorgame"ng-click="submitValue()" value="Check!">
-<input type="button" class="btn btn-success showAns"ng-click="showAnswer()" value="Show Answer!">
+<div class="btn btn-success showAns"ng-click="showAnswer()">
+<span class="showSpan top">Did you try your best?</span>
+<span class="showSpan bottom">Show Answer!</span>
+</div>
 </div>
