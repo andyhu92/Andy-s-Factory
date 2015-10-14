@@ -48,7 +48,10 @@ $('.aniview').AniView(options);
  $("#marioFlower").draggable({cursor: "pointer",zIndex: 100,containment: "body"},"enable");
 
  var interval;
+ $("#gameNav").click(function(){
   startBouncing();
+  setTimeout(stopBouncing,3000);
+  });
  function startBouncing(){
   interval = setInterval(function(){ 
     $("#mushroom,#marioFlower").animate({"top":"+=50px"},600);
@@ -59,11 +62,6 @@ $('.aniview').AniView(options);
     clearInterval(interval);
  }
 
-$("#mushroom,#marioFlower").on("mouseenter",function(){
-  stopBouncing();
-}).on("mouseleave",function(){
-  startBouncing();
-});
 
 //gallery effect
   $(".mainBody").on("click",".introphoto h1",function(){
@@ -100,7 +98,7 @@ $("#mushroom,#marioFlower").on("mouseenter",function(){
 
 //footer display
   var year = (new Date()).getFullYear();
-  $("p.copy").html("<b>Andy's Website! -" +" &copy "+year+"  </b>");
+  $("p.copy").html("<b>Andy's Website! -" +" &copy "+year+"   </b>");
  
 
 });
