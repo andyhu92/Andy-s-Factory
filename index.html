@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<link rel="stylesheet" href="css/backTop.css" >
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/octicons/octicons.css">
+  <link rel="stylesheet" href="css/octicons/octicons.css">
 	<link rel="stylesheet" href="css/button.css">
 
 </head>
@@ -27,19 +27,15 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 	<div class="container header">
-		<div class="row">
-			<div class="col-md-3 col-xs-2  col-xs-offset-5 col-md-offset-0">
-		       <a href="index.html" title="Home"><img src="image/logo.png" class="logo" alt="web logo"></a>
-		    </div><!-- md-3 -->
-		    <div class="col-md-offset-1 col-md-8 col-xs-11">
+		    <nav>
+		       <a href="index.html" class="logo" title="Home">Andy's Factory</a>
 		      <ul class="navigation">
-
 			    <li><a href="#/portfolio" id="portfolioNav"><button class="buttonNav spin circle">Portfolio</button></a></li>
 			    <li><a href="#/game" id="gameNav"><button class="buttonNav spin circle">Game</button></a></li>
 			    <li><a href="#/gallery" id="galleryNav"><button class="buttonNav spin circle">Gallery</button></a></li>
 			    <li><a href="#/about" id="aboutNav"><button class="buttonNav spin circle">About </button></a></li>
 		      </ul>
-		    </div><!-- md-7 -->
+		    </nav><!-- nav -->
 		</div>
 	</div>
 
@@ -55,7 +51,7 @@
     <img src="image/mario_flower.png",alt="draggable-image" id="marioFlower"  class="ui-widget-content hidden-md hidden-sm hidden-xs" title="drag me!"style="cursor:pointer"  >
     <a id='backTop' title="back to top">Back To Top</a>
    
-    <p style="float:left;margin-right:5px"class="copy"></p> <a href="http://github.com/andyhu92" target="_blank" title="github link"> <span class="octicon octicon-mark-github"></span></a>
+    <p style="float:left"><b>Andy's Website! -&copy 2015 </b><a href="http://github.com/andyhu92" target="_blank" title="github link"><span class="octicon octicon-mark-github"></span></a></p>
     <p style="float:right"><span class="glyphicon glyphicon-envelope"></span>  alreadyusedagain@gmail.com </p>
 
     </footer>
@@ -76,6 +72,7 @@
 <script src="application/controller/colorGameController.js"></script>
 <script src="application/controller/galleryController.js"></script>
 <script src="application/controller/portfolioController.js"></script>
+<script src="application/controller/aboutController.js"></script>
 <script src="application/html5_api.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

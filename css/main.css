@@ -1,11 +1,17 @@
 /* Header Section*/
-img.logo{
+a.logo{
    float:left;
    opacity: 0.6;
-   transition:0.5s;
+   text-indent:-5000px;
+   width:150px;
+   height:140px;
+   background:url('../image/logo.png');
 }
-img.logo:hover{
+a.logo:hover{
 	opacity: 1;
+}
+nav{
+	min-width: 960px;
 }
 .navigation{
 	float:right;
@@ -94,6 +100,9 @@ div.dummy span{
 }
 footer{
     border-top:2px groove black;
+}
+footer span{
+	color:black;
 }
 div.mainBody{
 	padding:30px;

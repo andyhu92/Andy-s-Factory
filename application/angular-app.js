@@ -21,24 +21,10 @@ app.directive("googleMap",function(){
     restrict:'E',
     templateUrl: 'template/googlemap.html',
     link:function(){
-      $("button.mapShow").click(function(){
-   
-       initialize();
-    });
+      initialize();
       }
        
   }
 })
 
-app.directive("test",function(){
-  return{
-    restrict:'E',
-    templateUrl:'application/googlemap.html',
-    link:function(){
-      $("button.mapShow").click(function(){
 
-        initialize();
-      });
-    }
-  }
-})

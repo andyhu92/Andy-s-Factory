@@ -9,24 +9,15 @@
 <br>
 
 
-
+<div ng-controller="aboutCtrl">
 <h1>Acknowledgements</h1>
 <ul class="list-group">
-	<li class="list-group-item">AngularJS</li>
-	<li class="list-group-item list-group-item-success">Bootstrap</li>
-	<li class="list-group-item">JQuery</li>
-	<li class="list-group-item list-group-item-success">JQuery UI</li>
-    <li class="list-group-item">Animate.css</li>
-	<li class="list-group-item list-group-item-success">Facebook Comment API</li>
-	<li class="list-group-item">Bootstrap Img Gallery Plugin -- Sebastian Tschan </li>
-	<li class="list-group-item list-group-item-success">GoogleMap API</li>
-    <li class="list-group-item">localStorge API</li>
-	<li class="list-group-item list-group-item-success">JQ BackTop Plugin -- codesalsa</li>
-    <li class="list-group-item">JQ Aniview Plugin --jjcosgrove</li>
+    <li class="list-group-item" ng-class="{'list-group-item-success':$odd}" ng-repeat="ack in acks">{{ack}}</li>
 </ul>
-
-    <p id="readMore"> Read more ...and find hidden text! </p>
-<div class="dummy">
+</div>
+<p class="btn btn-primary" role="button" data-toggle="collapse" data-target="#hiddenText"> Read more ...and find hidden text! </p>
+<hr>
+<div class="dummy well collapse" id="hiddenText">
     <div>
         Only to make page longer...and you can find the back to top button quite useful...quis, accumsan justo. Morbi vel erat arcu. Duis vel diam rhoncus, posuere sapien at, condiment quis, accumsan justo. Morbi vel 
         itae odio ullamcorper, congue risus quis, accumsan justo. Morbi vel erat arcu. Duis vel diam rhoncus, posuere sapien at, condimentum eros. Pellentesque pharetra congue mollis. Maecenas nec erat augue. Vivamu Nullam vitae odio ullamcorper, congue risus quis, accumsan justo. Morbi vel erat arcu. Duis vel diam rhoncus, posuere sapien at, condimentum eros. Pellentesque pharetra congue mollis. Maecenas nec erat augue. Vivamus sed tortor augue. Etiam rutrum, est et feugiat auctor, massa lectus ullamcorper elit, <span>Thanks</span> ut tempus ex tortor quis lorem. Nulla ornare varius est sed blandit. Interdum et malesuada fames ac 

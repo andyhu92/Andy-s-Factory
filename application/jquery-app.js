@@ -3,12 +3,10 @@ $(document).ready(function(){
  //Set current selection
 
   $(".navigation li a").click(function(){
-  	$(".navigation li a.current-nav").removeClass("current-nav");
-  	$(this).addClass("current-nav");
+    $(".navigation li a.current-nav").removeClass("current-nav");
+    $(this).addClass("current-nav");
   });
-  $("img.logo").click(function(){
-  	$(".navigation li a.current-nav").removeClass("current-nav");
-  });
+
  //Add effect for index page
 $(window).load(
   function(){
@@ -23,7 +21,6 @@ $('.aniview').AniView(options);
 }).on("mouseleave","#factory",function(){
    $("#factory").attr("src","image/factory.png");
  });
- 
 
 
 //game effect
@@ -47,7 +44,7 @@ $('.aniview').AniView(options);
  $("#mushroom").draggable({cursor: "pointer",zIndex: 100,containment: "body"},"enable");
  $("#marioFlower").draggable({cursor: "pointer",zIndex: 100,containment: "body"},"enable");
 
- var interval;
+var interval;
  $("#gameNav").click(function(){
   startBouncing();
   setTimeout(stopBouncing,3000);
@@ -62,7 +59,6 @@ $('.aniview').AniView(options);
     clearInterval(interval);
  }
 
-
 //gallery effect
   $(".mainBody").on("click",".introphoto h1",function(){
     $("body").css("background-image","url('image/gallery_wall.jpg')");
@@ -70,7 +66,7 @@ $('.aniview').AniView(options);
   	$("div.introphoto h2.welcome").remove();
   	$("div.introphoto h1 span").remove();
   	$("div.introphoto h1").animate({fontSize:"60px"},'fast');
-  	var text="<h2 class='welcome text-center'><em> Welcome! </em></h2>"
+  	var text="<h2 class='welcome' style='text-align:center'><em> Welcome! </em></h2>"
   	$("div.introphoto h1").after(text);
   	$("div.sign").animate({marginLeft:"28%"},'fast');
   });
@@ -84,11 +80,8 @@ $('.aniview').AniView(options);
     $("div#googleMap").fadeOut();
    })
 //about
-   $(".mainBody").on("click","p#readMore",function(){
-     $("div.dummy").fadeIn();
-     $("p#readMore").fadeOut();
-    });
 
+//backTop icon
    $('#backTop').backTop({
   'position' : 500,
   // scroll animation speed
@@ -97,8 +90,6 @@ $('.aniview').AniView(options);
 });
 
 //footer display
-  var year = (new Date()).getFullYear();
-  $("p.copy").html("<b>Andy's Website! -" +" &copy "+year+"   </b>");
- 
+
 
 });
