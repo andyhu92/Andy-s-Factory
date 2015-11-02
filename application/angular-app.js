@@ -1,7 +1,7 @@
 var app = angular.module("myApp",['ngRoute'])
 app.config(function($routeProvider){
   $routeProvider.when('/index.html',{
-    templateUrl:"template/index.html"
+    templateUrl:"template/intro.html"
   }).when('/game',{
     templateUrl: "template/game.html"
   }).when('/about',{

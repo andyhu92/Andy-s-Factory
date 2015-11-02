@@ -30,7 +30,7 @@ a{
     text-decoration:none;
 }
 
-div.header{
+header{
 	border-bottom: 3px groove black;
 	padding-bottom: 15px;
 }
@@ -127,8 +127,18 @@ footer{
     border-top:2px groove black;
     text-align: center;
 }
-
-
+footer p{
+	margin-top: 5px;
+}
+footer a,footer a:hover{
+	text-decoration: none;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+	margin-bottom: 5px;
+}
+footer a.backToTop{
+	text-shadow:1px 1px 2px gray;
+}
 /* ------small screen ---------*/
 @media screen and (max-width: 992px){
 	a.logo{
@@ -162,7 +172,6 @@ footer{
    #menu_toggle:hover,#menu_toggle:focus,div.navigation_small ul li:hover{
    	  background-color: white;
    	  color:black;
-   	  border:1px solid black;
    }
   
    div.navigation_small ul{
@@ -170,11 +179,13 @@ footer{
 	margin:5px auto;
 	font-weight: bold;
 	text-align: center;
+	text-transform: uppercase;
    }
    div.navigation_small ul li{
    	  margin-bottom:5px;
    	  padding:5px;
    	  background-color: black;
+   	  border:1px solid black;
    }
    div.navigation_small ul li:nth-child(even){
    	  background-color: gray;

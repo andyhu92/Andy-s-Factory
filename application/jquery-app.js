@@ -1,5 +1,11 @@
 $(document).ready(function(){
-
+ //small_screen nav
+ $("div.navigation_small li").on('mouseenter',function(){
+   $("div.navigation_small li a").css('color','white');
+   $(this).find('a').css('color','black');
+ }).on('mouseleave',function(){
+   $("div.navigation_small li a").css('color','white');
+ })
  //Set current selection
 
   $(".navigation li a").click(function(){
@@ -94,7 +100,11 @@ var interval;
   // red, white, black or green
   'color' : 'black',
 });
-
+//backTop Link
+ $('a.backToTop').on('click',function(e){
+  e.preventDefault();
+  $('body').animate({'scrollTop':0},'600');
+ })
 //footer display
   $("footer a").attr('target','_blank');
 

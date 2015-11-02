@@ -26,9 +26,9 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-	<div class="container header">
+	<header class="container">
 		    <nav>
-		       <a href="/" class="logo hidden-xs" title="Home"><img src="image/logo.png" alt="logo"></a>
+		       <a href="/" class="logo hidden-xs animated fadeIn" title="Home"><img src="image/logo.png" alt="logo"></a>
           <div class="navigation_small visible-xs" >
           <button data-toggle="collapse" data-target="#menu" id="menu_toggle">MENU</button>
             <div class="collapse" id="menu">
@@ -42,14 +42,14 @@
             </div>
           </div>
 		      <ul class="navigation hidden-xs">
-			    <li><a href="#/portfolio" id="portfolioNav"><button class="buttonNav spin circle">Portfolio</button></a></li>
-			    <li><a href="#/game" id="gameNav"><button class="buttonNav spin circle">Game</button></a></li>
-			    <li><a href="#/gallery" id="galleryNav"><button class="buttonNav spin circle">Gallery</button></a></li>
-			    <li><a href="#/about" id="aboutNav"><button class="buttonNav spin circle">About </button></a></li>
+			    <li><a href="#/portfolio" id="portfolioNav"><button class="buttonNav spin circle animated fadeIn">Portfolio</button></a></li>
+			    <li><a href="#/game" id="gameNav"><button class="buttonNav spin circle animated fadeIn">Game</button></a></li>
+			    <li><a href="#/gallery" id="galleryNav"><button class="buttonNav spin circle animated fadeIn">Gallery</button></a></li>
+			    <li><a href="#/about" id="aboutNav"><button class="buttonNav spin circle animated fadeIn">About </button></a></li>
 		      </ul>
 		    </nav><!-- nav -->
 		</div>
-	</div>
+	</header>
 
    <div class="mainBody container-fluid" ng-app="myApp">
     <div ng-view></div>
@@ -58,17 +58,20 @@
     <h1 class="text-center container">
          <noscript>Your browswer does not support or disenabled Javascript. You can enable JavaScript in your browser settings.</noscript>
     </h1>
-    <footer class="container">
+    <a id='backTop' title="back to top" class="hidden-xs">Back To Top</a>
+    <footer class="container aniview" av-animation="slideInLeft">
     <img src="image/Mushroom.png",alt="draggable-image" id="mushroom"  class="ui-widget-content hidden-md hidden-md hidden-sm hidden-xs" title="drag me!" style="cursor:pointer" >
     <img src="image/mario_flower.png",alt="draggable-image" id="marioFlower"  class="ui-widget-content hidden-md hidden-sm hidden-xs" title="drag me!"style="cursor:pointer"  >
-    <a id='backTop' title="back to top" class="hidden-xs">Back To Top</a>
+    
    
-    <p><b>Andy's Website! -&copy 2015 </b></p>
+    <p><b>Andy's Website &copy 2015 </b></p>
     <p><span class="glyphicon glyphicon-envelope"></span><b> alreadyusedagain@gmail.com </b></p>
-    <ul class="list-unstyled list-inline">
+    <ul class="list-unstyled list-inline" >
       <li><a href="http://github.com/andyhu92" title="github link"><i class="fa fa-3x fa-github"></i></a></li>
       <li><a href="https://www.facebook.com/cihang.hu" title="facebook link"><i class="fa fa-3x fa-facebook-square"></i></a></li>
       <li><a href="https://www.linkedin.com/in/cihanghu" title="linkedin link"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
+    </ul>
+    <a href='#'class="backToTop visible-xs"><b>Back to Top</b></a>
     </footer>
 <!-- Javascript Source -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
