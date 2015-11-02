@@ -62,6 +62,4 @@ function initialize() {
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(homeControlDiv);
 }
 
-var $about = document.getElementById("aboutNav");
 
-google.maps.event.addDomListener($about, 'click', initialize);

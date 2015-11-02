@@ -1,4 +1,6 @@
-<div class="introphoto">
+<div class="gallery_wrapper">
+<h1 class="text-center visible-xs">CLICK IMAGE BELOW TO ENTER </h1>
+<div class="introphoto hidden-xs">
     <h1><span class="glyphicon glyphicon-arrow-right" style="color:#EEE"></span> !Unfamous Gallery <span class="glyphicon glyphicon-arrow-left" style="color:#EEE"></span></h1>
     
      <ol> <h3>Gallery Info:</h3>
@@ -27,7 +29,7 @@
 
 <div id="links" style="clear:both" ng-controller="galleryCtrl">
     <a href="image/louvre.jpg" title="gallery" data-gallery>
-        <img src="image/thumbnails/louvre.jpg" style="display:block;margin-left:auto;margin-right:auto" >
+        <img src="image/thumbnails/louvre.jpg" class="gallery_enter">
     </a>
     <a ng-repeat="photo in photos" ng-href="{{photo.src}}" title="{{photo.title}}" data-gallery>
     </a>
@@ -69,3 +71,4 @@
 </div>
 
 <!-- Blue-imp gallery-->
+</div>

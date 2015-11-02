@@ -1,5 +1,9 @@
+div.gallery_wrapper{
+	width:80%;
+	margin: 0 auto;
+}
 div.introphoto{
-    background:url("../image/galleryback1.jpg") ;
+    background:url("../image/galleryback1.jpg");
     font-weight: bold;
     padding:20px;
     border-style: solid;
@@ -29,9 +33,18 @@ img.gallery_sign{
 	width: 100px;
 	height:100px;
 	padding:10px;
-	float: middle;
+}
+img.gallery_enter{
+	display: block;
+	margin:0 auto;
+	width:80%;
 }
 button.fullScreen, button.borderView{
 	margin-right:20px;
 }
 
+@media screen and (max-width:768px){
+	div.gallery_wrapper{
+		width: 100%;
+	}
+}

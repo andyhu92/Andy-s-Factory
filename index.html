@@ -2,7 +2,7 @@
 <html lang="en-US" >
 <head>
 	<meta charset="utf-8" />
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Andy's Factory! </title>
 	<link rel="stylesheet" href="vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<link rel="stylesheet" href="css/backTop.css" >
 	<link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/octicons/octicons.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/button.css">
 
 </head>
@@ -28,8 +28,20 @@
 
 	<div class="container header">
 		    <nav>
-		       <a href="index.html" class="logo" title="Home">Andy's Factory</a>
-		      <ul class="navigation">
+		       <a href="/" class="logo hidden-xs" title="Home"><img src="image/logo.png" alt="logo"></a>
+          <div class="navigation_small visible-xs" >
+          <button data-toggle="collapse" data-target="#menu" id="menu_toggle">MENU</button>
+            <div class="collapse" id="menu">
+              <ul class="list-unstyled">
+                 <li><a href="/">Home</a></li>
+                 <li><a href="#/portfolio" >Portfolio</a></li>
+                 <li><a href="#/game" >Game</button></a></li>
+                 <li><a href="#/gallery">Gallery</a></li>
+                 <li><a href="#/about">About</a></li>
+              </ul>
+            </div>
+          </div>
+		      <ul class="navigation hidden-xs">
 			    <li><a href="#/portfolio" id="portfolioNav"><button class="buttonNav spin circle">Portfolio</button></a></li>
 			    <li><a href="#/game" id="gameNav"><button class="buttonNav spin circle">Game</button></a></li>
 			    <li><a href="#/gallery" id="galleryNav"><button class="buttonNav spin circle">Gallery</button></a></li>
@@ -49,11 +61,14 @@
     <footer class="container">
     <img src="image/Mushroom.png",alt="draggable-image" id="mushroom"  class="ui-widget-content hidden-md hidden-md hidden-sm hidden-xs" title="drag me!" style="cursor:pointer" >
     <img src="image/mario_flower.png",alt="draggable-image" id="marioFlower"  class="ui-widget-content hidden-md hidden-sm hidden-xs" title="drag me!"style="cursor:pointer"  >
-    <a id='backTop' title="back to top">Back To Top</a>
+    <a id='backTop' title="back to top" class="hidden-xs">Back To Top</a>
    
-    <p style="float:left"><b>Andy's Website! -&copy 2015 </b><a href="http://github.com/andyhu92" target="_blank" title="github link"><span class="octicon octicon-mark-github"></span></a></p>
-    <p style="float:right"><span class="glyphicon glyphicon-envelope"></span>  alreadyusedagain@gmail.com </p>
-
+    <p><b>Andy's Website! -&copy 2015 </b></p>
+    <p><span class="glyphicon glyphicon-envelope"></span><b> alreadyusedagain@gmail.com </b></p>
+    <ul class="list-unstyled list-inline">
+      <li><a href="http://github.com/andyhu92" title="github link"><i class="fa fa-3x fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/cihang.hu" title="facebook link"><i class="fa fa-3x fa-facebook-square"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/cihanghu" title="linkedin link"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
     </footer>
 <!-- Javascript Source -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>

@@ -72,12 +72,18 @@ var interval;
   });
   
 //google Map
-
-   $(".mainBody").on("click","button.mapShow",function(){
-    $("div#googleMap").fadeIn();
-   });
+    
     $(".mainBody").on("click","button.mapHide",function(){
-    $("div#googleMap").fadeOut();
+      var $bt = $("button.mapHide");
+    $("div#googleMap").fadeToggle();
+    if($bt.text() == " Hide Map "){
+    $bt.removeClass("btn-primary").addClass("btn-success");
+    $bt.text(" Show Map ");
+    }
+    else{
+      $bt.removeClass("btn-success").addClass("btn-primary");
+    $bt.text(" Hide Map ");
+    }
    })
 //about
 
@@ -90,6 +96,6 @@ var interval;
 });
 
 //footer display
-
+  $("footer a").attr('target','_blank');
 
 });
