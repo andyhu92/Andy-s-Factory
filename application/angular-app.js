@@ -1,5 +1,6 @@
-var app = angular.module("myApp",['ngRoute'])
-app.config(function($routeProvider){
+(function(angular){
+  angular.module("myApp",['ngRoute'])
+.config(function($routeProvider){
   $routeProvider.when('/index.html',{
     templateUrl:"template/intro.html"
   }).when('/game',{
@@ -15,8 +16,8 @@ app.config(function($routeProvider){
 redirectTo: "index.html"
 });
 });        
-
-app.directive("googleMap",function(){
+})(window.angular);
+angular.module('myApp').directive("googleMap",function(){
   return{
     restrict:'E',
     templateUrl: 'template/googlemap.html',

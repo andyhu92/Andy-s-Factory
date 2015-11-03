@@ -1,4 +1,4 @@
-app.controller('portfolioCtrl',function($scope){
+angular.module('myApp').controller('portfolioCtrl',function($scope){
     $scope.list = [
     {
     	src:"image/chat-icon.png",

@@ -4,9 +4,11 @@ body{
 /* Header Section*/
 a.logo{
    float:left;
+}
+a.logo img{
    opacity: 0.6;
 }
-a.logo:hover{
+a.logo img:hover{
 	opacity: 1;
 }
 
@@ -137,7 +139,12 @@ footer a,footer a:hover{
 	margin-bottom: 5px;
 }
 footer a.backToTop{
-	text-shadow:1px 1px 2px gray;
+	width:20%;
+	margin:20px auto;
+	border: 1px solid black;
+	box-shadow: 1px 1px 2px black;
+	background-color: black;
+	color:white;
 }
 /* ------small screen ---------*/
 @media screen and (max-width: 992px){
