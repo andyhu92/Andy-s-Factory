@@ -79,14 +79,16 @@ transition:all 0.4s;
 	position:absolute;
 	top:250px;
 	left:50px;
+	width:150px;
+	height:150px;
 }
 #marioFlower{
 	display:none;
 	position:absolute;
 	top:250px;
 	right:20px;
-	width:200px;
-	height:200px;
+    width:150px;
+	height:150px;
 }
 @media screen and (max-width:768px){
 	div.colorpicker{
@@ -107,9 +109,9 @@ transition:all 0.4s;
   }
   .showAns:hover .bottom{
 	top:5px;
-	left:35%;
+	left:40%;
 }
 .showSpan{
-left:30%;
+left:35%;
 }
 }
