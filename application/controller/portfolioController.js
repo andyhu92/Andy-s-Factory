@@ -1,8 +1,14 @@
 angular.module('myApp').controller('portfolioCtrl',function($scope){
     $scope.list = [
     {
+        src:"image/cube.png",
+        link:"http://www.andyhch.com/NumberScramble/index.html",
+        gly:"glyphicon glyphicon-equalizer",
+        title:"NumberScramble Game",
+        detail:"Developed a simple number scramble game based on HTML5 drag and drop event, Jquery, Bootstrap and localstorage API. User can select different mode to play the game and the score will be saved in user's localstorage. User can view their score by clicking the gameboard button."
+    },
+    {
     	src:"image/chat-icon.png",
-    	alt:"chat-logo",
     	link:"http://www.andyhch.com/comment_box/index.html",
     	gly:"glyphicon glyphicon-comment",
     	title:"Comment Box",
@@ -10,7 +16,6 @@ angular.module('myApp').controller('portfolioCtrl',function($scope){
     },
     {
     	src:"image/coderoom.png",
-    	alt:"coderoom-logo",
     	link:"http://www.andyhch.com/coderoom/index.html",
     	gly:"glyphicon glyphicon-th-large",
     	title:"CodeRoom Project",
@@ -18,7 +23,6 @@ angular.module('myApp').controller('portfolioCtrl',function($scope){
     },
     {
         src:"image/angularjs.png",
-        alt:"angularJS-logo",
         link:"http://www.andyhch.com/bookmark.html",
         view:"fadeInRight",
         gly:"glyphicon glyphicon-pencil",
@@ -27,7 +31,6 @@ angular.module('myApp').controller('portfolioCtrl',function($scope){
     },
     {
     	src:"image/uilogo.png",
-    	alt:"ui-logo",
     	link:"http://andyhch.com/wordpress/gameui/nggallery/thumbnails",
     	view:"fadeInLeft",
     	gly:"glyphicon glyphicon-picture",

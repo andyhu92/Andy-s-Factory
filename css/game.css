@@ -2,24 +2,17 @@ div.colorpicker{
 	width:80%;
 	margin:0 auto;
 }
+div.gamedivWrapper{
+	width:100%;
+	margin: 0 auto;
+}
 div.gamediv{
 border:1px solid black;
 border-radius:5px;
-display:inline-block;
-width:47%;
+float:left;
+margin:1%;
+width:48%;
 height:250px;
-margin-right:2%;
-}
-.gamebt{
-width:47%;
-height:100px;
-font-size: 2em;
-margin-left:1%;
-margin-right:1%;
--webkit-transition:all 0.4s;
--moz-transition:all 0.4s;
--o-transition:all 0.4s;
-transition:all 0.4s;
 }
 .gameInstruction{
 width:100%;
@@ -39,11 +32,27 @@ width:100%;
 }
 .colorbar{
 width:100%;
+font-weight: bold;
+font-size: 110%;
+text-align: center;
+}
+.gamebtnWrapper{
+	width:100%;
+}
+.gamebt{
+float:left;
+width:48%;
+height:70px;
+font-size: 2em;
+margin:1%;
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+-o-transition:all 0.4s;
+transition:all 0.4s;
 }
 .showAns{
 width:100%;
 height:34px;
-float: left;
 margin-top: 5px;
 text-align: center;
 -webkit-transition:all 0.4s;
@@ -54,25 +63,11 @@ position:relative;
 overflow: hidden;
 }
 .showSpan{
-position: absolute;
-left:40%;
+text-align: center;
 -webkit-transition:all 0.4s;
 -moz-transition:all 0.4s;
 -o-transition:all 0.4s;
 transition:all 0.4s;
-}
-.showSpan.top{
-    top:5px;	
-}
-.showSpan.bottom{
-    top:34px;
-}
-.showAns:hover .top{
-	top:-34px;
-}
-.showAns:hover .bottom{
-	top:5px;
-	left:45%;
 }
 #mushroom{
 	display:none;
@@ -90,6 +85,19 @@ transition:all 0.4s;
     width:150px;
 	height:150px;
 }
+@media screen and (min-width: 768px){
+	.showSpan.bottom{
+    top:34px;
+}
+.showAns:hover .top{
+	position:relative;
+	top:-34px;
+}
+.showAns:hover .bottom{
+	position:relative;
+	top:-30px;
+}
+}
 @media screen and (max-width:768px){
 	div.colorpicker{
 		width:100%;
@@ -103,15 +111,18 @@ transition:all 0.4s;
   }
   .gamebt{
   	width:100%;
-  	height:70px;
+  	height:50px;
+  	font-size: 1.5em;
   	margin-bottom: 5px;
   	margin-left:0;
   }
-  .showAns:hover .bottom{
-	top:5px;
-	left:40%;
-}
-.showSpan{
-left:35%;
-}
+  .showAns .top{
+  	position:relative;
+	top:-34px;
+  }
+  .showAns .bottom{
+  	position: relative;
+  	top:-30px;
+  }
+
 }

@@ -2,43 +2,45 @@
 <div class="colorpicker" ng-controller="gameCtrl">
         <h1 style="font-size:3.6em" class="text-center animated bounceInDown"> Game Zone! </h1>
 <hr>
-<div class='gameInstruction'style="display:inline-block">
-        <h3 style="text-align:center"> Color Picker! </h3>
-        <h4><strong> Rules: </strong></h4>
-        <p>1. Click on 'Generate' to generate a random color background for the first box.</p>
-        <p>2. Adjust the scroll bar to let the second box match the color of first one!</p>
-        <h4><strong> Scores: </strong></h4>
-        <ol>
-        <li> Totally Match!!! Unbelievable!!! </li>
-        <li> Error less than 10: Top Color expert!</li>
-        <li> Error less than 20: Color Master!</li>
-        <li> Error less than 30: So close!</li>
-        <li> Else: Have another try! </li>
-        </ol>
-</div>
-
-<div class="gamediv"style="background-color:rgb({{g_red}},{{g_green}},{{g_blue}})">
-</div>
-<div class="gamediv"style="background-color:rgb({{red}},{{green}},{{blue}})">
-</div>
-
+        <div class='gameInstruction'>
+                <h3 style="text-align:center"> Color Picker! </h3>
+                <h4><strong> Rules: </strong></h4>
+                <p>1. Click on 'Generate' to generate a random color background for the first box.</p>
+                <p>2. Adjust the scroll bar to let the second box match the color of first one!</p>
+                <h4><strong> Scores: </strong></h4>
+                <ol>
+                <li> Totally Match!!! Unbelievable!!! </li>
+                <li> Error less than 10: Top Color expert!</li>
+                <li> Error less than 20: Color Master!</li>
+                <li> Error less than 30: So close!</li>
+                <li> Else: Have another try! </li>
+                </ol>
+        </div>
+        <div class="gamedivWrapper">
+                <div class="gamediv"style="background-color:rgb({{g_red}},{{g_green}},{{g_blue}})">
+                </div>
+                <div class="gamediv"style="background-color:rgb({{red}},{{green}},{{blue}})">
+                </div>
+        </div>
 <br>
-<div class="colorbar">
-<div style="color:red">
-<input type="range" min="0" max="255" ng-model="red">{{red}}</input><br>
-</div>
-<div style="color:green">
-<input type="range" min="0"max="255" ng-model="green">{{green}}<br>
-</div>
-<div style="color:blue">
-<input type="range" min="0" max="255" ng-model="blue">{{blue}}
-</div>
-</div>
+        <div class="colorbar">
+                <div style="color:red">
+                <input type="range" min="0" max="255" ng-model="red">{{red}}</input><br>
+                </div>
+                <div style="color:green">
+                <input type="range" min="0"max="255" ng-model="green">{{green}}<br>
+                </div>
+                <div style="color:blue">
+                <input type="range" min="0" max="255" ng-model="blue">{{blue}}
+                </div>
+        </div>
 <br>
-<input type="button" class="btn btn-warning gamebt"ng-click="generateValue()" value="Generate!">
-<input type="button" class="btn btn-primary gamebt"ng-click="submitValue()" value="Check!">
-<div class="btn btn-success showAns"ng-click="showAnswer()">
-<span class="showSpan top">Did you try your best?</span>
-<span class="showSpan bottom">Show Answer!</span>
-</div>
+        <div class="gamebtnWrapper">
+        <input type="button" class="btn btn-warning gamebt"ng-click="generateValue()" value="Generate!">
+        <input type="button" class="btn btn-primary gamebt"ng-click="submitValue()" value="Check!">
+        <div class="btn btn-success showAns"ng-click="showAnswer()">
+        <p class="showSpan top">Did you try your best?</p>
+        <p class="showSpan bottom">Show Answer!</p>
+        </div>
+        </div>
 </div>
