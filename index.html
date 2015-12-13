@@ -37,11 +37,26 @@
 			    <li><a href="#/game" id="gameNav"><button class="buttonNav spin circle animated fadeIn">Game</button></a></li>
 			    <li><a href="#/gallery" id="galleryNav"><button class="buttonNav spin circle animated fadeIn">Gallery</button></a></li>
 			    <li><a href="#/about" id="aboutNav"><button class="buttonNav spin circle animated fadeIn">About </button></a></li>
+          <li id="searchNav"><button data-toggle="collapse" data-target="#searchBox" style="border:none;background:transparent;">
+<span class="glyphicon glyphicon-search"></span>
+</button></li>
 		      </ul>
 		    </nav><!-- nav -->
 		</div>
 	</header>
-
+   <div id="searchBox" class="container collapse"><script>
+  (function() {
+    var cx = '013345100765426537740:cpyk-evtewk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
    <div class="mainBody container-fluid" ng-app="myApp">
     <div ng-view></div>
     	   

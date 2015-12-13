@@ -12,6 +12,12 @@ $(document).ready(function(){
     $(".navigation li a.current-nav").removeClass("current-nav");
     $(this).addClass("current-nav");
   });
+//Add function to search box clear button
+$('#searchNav').on('click',function(){
+  $(".gsc-clear-button").click(function(){
+    $("#searchBox").removeClass('in');
+})
+})
 
  //Add effect for index page
 $(window).load(
