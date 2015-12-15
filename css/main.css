@@ -1,248 +1,368 @@
 @import url("https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css");
 @import url("bootstrap-image-gallery.min.css");
-@import url("game.css");
-@import url("gallery.css");
-@import url("backTop.css" );
+@import url("backTop.css");
 @import url("animate.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("button.css");
-body{
-	background-size: cover;
-}
-/* Header Section*/
-a.logo{
-   float:left;
-}
-a.logo img{
-   opacity: 0.6;
-}
-a.logo img:hover{
-	opacity: 1;
-}
+body {
+  background-size: cover; }
 
-.navigation{
-	float:right;
-	padding-top:30px;
-}
+header {
+  border-bottom: 3px groove black;
+  padding-bottom: 15px; }
 
-.navigation li{
-	font-size:160%;
-	font-family: Arial, Helvetica, sans-serif;
-	display:inline;
-	list-style:none;
-	padding-right:35px;
-}
-a{
-	color:black;
-}
-.navigation a:link,
-.navigation a:visited{
-    text-decoration:none;
-}
+a {
+  color: #000; }
+  a .current-nav {
+    color: red;
+    text-shadow: 1px 1px 2px #eee; }
+  a .logo {
+    float: left; }
+    a .logo img {
+      opacity: 0.6; }
+      a .logo img:hover {
+        opacity: 1; }
 
-header{
-	border-bottom: 3px groove black;
-	padding-bottom: 15px;
-}
-/* Portfolio */
-div.portfolio_wrapper{
-	width:80%;
-	margin:0 auto;
-}
-div.portfolio a:link,
-div.portfolio a:visited{
-    text-decoration:none;
-}
-div.portfolio a:hover{
-	color:#000000; text-shadow:1px 1px 2px lightgray;
-}
-div.portfolio{
-	margin-bottom:50px;
-}
-div.portfolio img{
-float:left; 
-margin-right:20px;
-width:25%;
-height:auto;
-}
-div.portfolio h2{
-	text-align: left;
-	-webkit-transition: all 0.3s ease-in-out; /* Safari */
-    transition: all 0.3s ease-in-out;
-}
-div.portfolio h2:hover{
-	letter-spacing: 1px;
-}
+.navigation {
+  float: right;
+  padding-top: 30px; }
+  .navigation li {
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    list-style: none;
+    padding-right: 35px; }
+  .navigation a:link, .navigation a:visited {
+    text-decoration: none; }
+
 /* Comment */
-div.fb-comments{
-	display:block;
-	margin:0 auto;
-	width: 600px;
-}
-/* -- */
+div.fb-comments {
+  display: block;
+  width: 600px;
+  margin: 0 auto; }
 
-a.current-nav{
-	color:red;
-	text-shadow:1px 1px 2px #eee;
-}
-/* -- about --*/
-div.about_wrapper{
-	width:80%;
-	margin:0 auto;
-}
-/* Google Map*/
-#googleMap{
-		width:600px;
-		height:400px;
-		margin:10px auto;
-	}
-/* -- */
-p#readMore{
-	cursor: pointer;
-}
-div.dummy{
-	display:none;
-}
-div.dummy span{
-	font-style: italic;
-	font-size:16px;
-}
+/* Google Map */
+#googleMap {
+  display: block;
+  width: 600px;
+  margin: 10px auto;
+  height: 400px; }
 
-div.mainBody{
-	padding:30px;
-	width:80%;
-	text-align: justify;
-}
+/* Main Body */
+div.mainBody {
+  padding: 30px;
+  width: 80%;
+  text-align: justify; }
+
+/* -- footer -- */
+footer {
+  border-top: 2px groove black;
+  text-align: center; }
+  footer p {
+    margin-top: 5px; }
+  footer a, footer:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out 0;
+    -moz-transition: all 0.5s ease-in-out 0;
+    transition: all 0.5s ease-in-out 0;
+    margin-bottom: 5px; }
+  footer a.backToTop {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    font-size: 14px;
+    padding: 2px 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    background-color: black;
+    color: white; }
+
+/* ------small screen --------- */
+@media screen and (max-width: 992px) {
+  a.logo {
+    float: none;
+    display: block;
+    text-align: center; }
+
+  ul.navigation {
+    float: none;
+    text-align: center; }
+
+  div.navigation_small {
+    text-align: center; }
+    div.navigation_small a {
+      display: block;
+      text-decoration: none;
+      color: white; }
+      div.navigation_small a:hover {
+        color: black; } }
+#menu_toggle {
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: bold;
+  background-color: black;
+  color: white; }
+  #menu_toggle:hover, #menu_toggle:focus {
+    background-color: white;
+    color: black; }
+
+div.navigation_small ul {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+  div.navigation_small ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black; }
+    div.navigation_small ul li:hover {
+      background-color: white;
+      color: black; }
+    div.navigation_small ul li:nth-child(even) {
+      background: gray; }
+      div.navigation_small ul li:nth-child(even):hover {
+        background-color: white; }
+
+@media screen and (max-width: 768px) {
+  #factory {
+    width: 200px;
+    height: 125px; }
+
+  div.intro {
+    font-weight: bold; }
+    div.intro h1 {
+      font-size: 24px; }
+    div.intro h2 {
+      font-size: 20px; }
+    div.intro h3 {
+      font-size: 18px; }
+
+  #googleMap {
+    width: 310px;
+    height: 270px; } }
 /* -- intro -- */
-div.intro{
-	text-align: center;
-}
+div.intro {
+  text-align: center; }
+  div.intro img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 20px; }
 
-div.intro img{
-	width:60%;
-	height:auto;
-	margin-bottom: 20px;
-}
-#factory{
-	width:400px;
-	height:250px;
-}
-div.intro_other{
-	border-bottom: 2px solid black;
-	padding-bottom: 20px;
-}
+#factory {
+  width: 400px;
+  height: 250px; }
 
-/* -- footer --*/
-footer{
-    border-top:2px groove black;
+div.intro_other {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px; }
+  div.intro_other img {
+    width: 180px;
+    height: 180px; }
+
+/* Portfolio */
+div.portfolio_wrapper {
+  width: 80%;
+  margin: 0 auto; }
+  div.portfolio_wrapper a:link, div.portfolio_wrapper a:visited {
+    text-decoration: none; }
+  div.portfolio_wrapper a:hover {
+    color: black;
+    text-shadow: 1px 1px 2px lightgray; }
+
+div.portfolio {
+  margin-bottom: 50px; }
+  div.portfolio img {
+    float: left;
+    margin-right: 20px;
+    width: 25%;
+    height: auto; }
+  div.portfolio h2 {
+    text-align: left;
+    -webkit-transition: all 0.3s ease-in-out 0;
+    -moz-transition: all 0.3s ease-in-out 0;
+    transition: all 0.3s ease-in-out 0; }
+  div.portfolio:hover {
+    letter-spacing: 1px; }
+
+@media screen and (max-width: 768px) {
+  div.portfolio img {
+    display: none; } }
+/* Game */
+div.colorPicker {
+  width: 80%;
+  margin: 0 auto; }
+
+div.gameDivWrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+div.gameDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  float: left;
+  margin: 1%;
+  width: 48%;
+  height: 250px; }
+
+.gameInstruction {
+  width: 100%;
+  background-image: url("../../image/gamebackground.jpg");
+  background-size: cover;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px; }
+  .gameInstruction ol {
+    width: 50%;
+    margin: 0 auto; }
+
+input[type=range] {
+  width: 100%; }
+
+.colorBar {
+  width: 100%;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center; }
+
+.gameBtnWrapper {
+  width: 100%; }
+
+.gameBtn {
+  float: left;
+  width: 48%;
+  height: 70px;
+  font-size: 2em;
+  margin: 1%;
+  -webkit-transition: all 0.4s ease-in-out 0;
+  -moz-transition: all 0.4s ease-in-out 0;
+  transition: all 0.4s ease-in-out 0; }
+
+.showAns {
+  width: 100%;
+  height: 34px;
+  margin-top: 5px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out 0;
+  -moz-transition: all 0.4s ease-in-out 0;
+  transition: all 0.4s ease-in-out 0;
+  position: relative;
+  overflow: hidden; }
+
+.showSpan {
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out 0;
+  -moz-transition: all 0.4s ease-in-out 0;
+  transition: all 0.4s ease-in-out 0; }
+
+#mushroom, #marioFlower {
+  display: none;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  width: 150px;
+  height: 150px; }
+
+#marioFlower {
+  left: inherit;
+  right: 20px; }
+
+@media screen and (min-width: 768px) {
+  .showSpan.bottom {
+    top: 34px; }
+
+  .showAns:hover .top {
+    position: relative;
+    top: -34px; }
+
+  .showAns:hover .bottom {
+    position: relative;
+    top: -30px; } }
+@media screen and (max-width: 768px) {
+  div.colorPicker {
+    width: 100%; }
+
+  .gameInstruction ol {
+    width: 100%;
+    margin: 0 auto; }
+
+  div.gameDiv {
+    height: 100px; }
+
+  .gameBtn {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-left: 0; }
+
+  .showAns .top {
+    position: relative;
+    top: -34px; }
+  .showAns .bottom {
+    position: relative;
+    top: -30px; } }
+div.gallery_wrapper {
+  display: block;
+  width: 80%;
+  margin: 0 auto; }
+
+div.galleryIntro {
+  background: url("../../image/galleryback1.jpg");
+  font-weight: bold;
+  padding: 20px;
+  border: 14px solid;
+  -moz-border-image: url(../../image/border1.png) 34 27 27 repeat;
+  -webkit-border-image: url(../../image/border1.png) 34 27 27 repeat;
+  -o-border-image: url(../../image/border1.png) 34 27 27 repeat;
+  border-image: url(../../image/border1.png) 34 27 27 repeat; }
+  div.galleryIntro ul {
+    font-size: 1.2em; }
+  div.galleryIntro h1 {
     text-align: center;
-}
-footer p{
-	margin-top: 5px;
-}
-footer a,footer a:hover{
-	text-decoration: none;
-	-webkit-transition:all 0.5s;
-	transition:all 0.5s;
-	margin-bottom: 5px;
-}
-footer a.backToTop{
-	width:30%;
-	font-size: 14px;
-	margin:20px auto;
-	padding:2px 4px;
-	border: 1px solid black;
-	border-radius: 5px;
-	box-shadow: 1px 1px 2px black;
-	background-color: black;
-	color:white;
-}
-/* ------small screen ---------*/
-@media screen and (max-width: 992px){
-	a.logo{
-	float:none;
-	display:block;
-    text-align: center;
-   }
-    ul.navigation{
-    	float:none;
-    	text-align: center;
-    }
-   div.navigation_small{
-   	text-align: center;
-   }
-   div.navigation_small a{
-   	display: block;
-   	text-decoration: none;
-   	color:white;
-   }
-   div.navigation_small a:hover{
-   	color:black;
-   }
-   #menu_toggle{
-   	 width:100%;
-   	 border:1px solid black;
-   	 padding:5px;
-   	 font-weight: bold;
-   	 background-color: black;
-   	 color:white;
-   }
-   #menu_toggle:hover,#menu_toggle:focus,div.navigation_small ul li:hover{
-   	  background-color: white;
-   	  color:black;
-   }
-  
-   div.navigation_small ul{
-	width:100%;
-	margin:5px auto;
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
-   }
-   div.navigation_small ul li{
-   	  margin-bottom:5px;
-   	  padding:5px;
-   	  background-color: black;
-   	  border:1px solid black;
-   }
-   div.navigation_small ul li:nth-child(even){
-   	  background-color: gray;
-   }
-   div.navigation_small ul li:nth-child(even):hover{
-   	  background-color: white;
-   }
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 30px;
+    cursor: pointer; }
 
-div.portfolio_wrapper{
-	width:100%;
-}
-div.about_wrapper{
-	width: 100%;
-}
-}
+h2.welcome {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
 
-@media screen and (max-width: 768px){
-	#factory{
-	    width:200px;
-	    height:125px;
-     } 
-    div.intro h1{
-    	font-size: 24px;
-    	font-weight: bold;
-    }
-    div.intro h2{
-    	font-size: 20px;
-    	font-weight: bold;
-    }
-     div.intro h3{
-    	font-size: 18px;
-    	font-weight: bold;
-    }
-	div.portfolio img{
-		display: none;
-	}
-	#googleMap{
-		width:310px;
-		height:270px;
-	}
+img.gallery_sign {
+  width: 100px;
+  height: 100px;
+  padding: 10px; }
 
-}
+img.gallery_enter {
+  display: block;
+  width: 80%;
+  margin: 0 auto; }
+
+button.fullScreen, button.borderView {
+  margin-right: 20px; }
+
+@media screen and (max-width: 768px) {
+  div.gallery_wrapper {
+    width: 100%; } }
+/* -- about -- */
+div.about_wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+p#readMore {
+  cursor: pointer; }
+
+div.dummy {
+  display: none; }
+  div.dummy span {
+    font-style: italic;
+    font-size: 16px; }
+
+/*# sourceMappingURL=main.css.map */

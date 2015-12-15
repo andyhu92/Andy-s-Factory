@@ -1,0 +1,153 @@
+//Define transition mixin
+=transition($property, $duration, $timeFn, $delay:0)
+  -webkit-transition: $property $duration $timeFn $delay
+  -moz-transition: $property $duration $timeFn $delay
+  transition: $property $duration $timeFn $delay
+
+//Center block mixin
+=center-block($width, $margin:0)
+  display: block
+  width: $width
+  margin: $margin auto
+
+//Media Query mixin
+=media($query,$value)
+  @media screen and ($query: $value)
+    @content
+
+$link-color: #000
+
+body
+  background-size: cover
+
+header
+  border-bottom: 3px groove black
+  padding-bottom: 15px
+
+a
+  color: $link-color
+  .current-nav
+    color: red
+    text-shadow: 1px 1px 2px #eee
+  .logo
+    float: left
+    img
+      opacity: 0.6
+      &:hover
+        opacity: 1
+
+.navigation
+  float: right
+  padding-top: 30px
+  li
+    font-size: 160%
+    font-family: Arial, Helvetica, sans-serif
+    display: inline
+    list-style: none
+    padding-right: 35px
+  a
+    &:link, &:visited
+      text-decoration: none
+
+/* Comment */
+div.fb-comments
+  +center-block(600px)
+
+/* Google Map*/
+#googleMap
+  +center-block(600px,10px)
+  height: 400px
+
+/* Main Body */
+div.mainBody
+  padding: 30px
+  width: 80%
+  text-align: justify
+
+/* -- footer --*/
+footer
+  border-top: 2px groove black
+  text-align: center
+  p
+    margin-top: 5px
+  a, &:hover
+    text-decoration: none
+    +transition(all,0.5s,ease-in-out)
+    margin-bottom: 5px
+  a.backToTop
+    +center-block(30%,20px)
+    font-size: 14px
+    padding: 2px 4px
+    border: 1px solid black
+    border-radius: 5px
+    box-shadow: 1px 1px 2px black
+    background-color: black
+    color: white
+
+/* ------small screen ---------*/
++media(max-width, 992px)
+  a.logo
+    float: none
+    display: block
+    text-align: center
+
+  ul.navigation
+    float: none
+    text-align: center
+
+  div.navigation_small
+    text-align: center
+    a
+      display: block
+      text-decoration: none
+      color: white
+      &:hover
+        color: black
+
+#menu_toggle
+  width: 100%
+  border: 1px solid black
+  padding: 5px
+  font-weight: bold
+  background-color: black
+  color: white
+  &:hover, &:focus
+    background-color: white
+    color: black
+
+div.navigation_small
+  ul
+    +center-block(100%,5px)
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    li
+      margin-bottom: 5px
+      padding: 5px
+      background-color: black
+      border: 1px solid black
+      &:hover
+        background-color: white
+        color: black
+      &:nth-child(even)
+        background: gray
+        &:hover
+          background-color: white
+
++media(max-width, 768px)
+  #factory
+    width: 200px
+    height: 125px
+
+  div.intro
+    font-weight: bold
+    h1
+      font-size: 24px
+    h2
+      font-size: 20px
+    h3
+      font-size: 18px
+
+  #googleMap
+    width: 310px
+    height: 270px

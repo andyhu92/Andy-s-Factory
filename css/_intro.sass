@@ -1,0 +1,28 @@
+//Define transition mixin
+=transition($property, $duration, $timeFn, $delay:0)
+  -webkit-transition: $property $duration $timeFn $delay
+  -moz-transition: $property $duration $timeFn $delay
+  transition: $property $duration $timeFn $delay
+
+//Center block mixin
+=center-block($width, $margin:0)
+  width: $width
+  margin: $margin auto
+
+/* -- intro -- */
+div.intro
+  text-align: center
+  img
+    width: 40%
+    height: auto
+    margin-bottom: 20px
+#factory
+  width: 400px
+  height: 250px
+
+div.intro_other
+  border-bottom: 2px solid black
+  padding-bottom: 20px
+  img
+    width: 180px
+    height: 180px

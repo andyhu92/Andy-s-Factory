@@ -1,0 +1,42 @@
+/* Portfolio */
+//Define transition mixin
+=transition($property, $duration, $timeFn, $delay:0)
+  -webkit-transition: $property $duration $timeFn $delay
+  -moz-transition: $property $duration $timeFn $delay
+  transition: $property $duration $timeFn $delay
+
+//Center block mixin
+=center-block($width, $margin:0)
+  width: $width
+  margin: $margin auto
+
+//Media Query mixin
+=media($query,$value)
+  @media screen and ($query: $value)
+    @content
+
+div.portfolio_wrapper
+  +center-block(80%)
+  a
+    &:link,&:visited
+      text-decoration: none
+    &:hover
+      color: black
+      text-shadow: 1px 1px 2px lightgray
+
+div.portfolio
+  margin-bottom: 50px
+  img
+    float: left
+    margin-right: 20px
+    width: 25%
+    height: auto
+  h2
+    text-align: left
+    +transition(all,0.3s,ease-in-out)
+  &:hover
+    letter-spacing: 1px
+
++media(max-width, 768px)
+  div.portfolio img
+    display: none

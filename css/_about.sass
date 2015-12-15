@@ -1,0 +1,23 @@
+//Define transition mixin
+=transition($property, $duration, $timeFn, $delay:0)
+  -webkit-transition: $property $duration $timeFn $delay
+  -moz-transition: $property $duration $timeFn $delay
+  transition: $property $duration $timeFn $delay
+
+//Center block mixin
+=center-block($width, $margin:0)
+  width: $width
+  margin: $margin auto
+
+/* -- about --*/
+div.about_wrapper
+  +center-block(80%)
+
+p#readMore
+  cursor: pointer
+
+div.dummy
+  display: none
+  span
+    font-style: italic
+    font-size: 16px

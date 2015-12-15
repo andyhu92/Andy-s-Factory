@@ -1,5 +1,5 @@
   
-<div class="colorpicker" ng-controller="gameCtrl">
+<div class="colorPicker" ng-controller="gameCtrl">
         <h1 style="font-size:3.6em" class="text-center animated bounceInDown"> Game Zone! </h1>
 <hr>
         <div class='gameInstruction'>
@@ -16,14 +16,14 @@
                 <li> Else: Have another try! </li>
                 </ol>
         </div>
-        <div class="gamedivWrapper">
-                <div class="gamediv"style="background-color:rgb({{g_red}},{{g_green}},{{g_blue}})">
+        <div class="gameDivWrapper">
+                <div class="gameDiv"style="background-color:rgb({{g_red}},{{g_green}},{{g_blue}})">
                 </div>
-                <div class="gamediv"style="background-color:rgb({{red}},{{green}},{{blue}})">
+                <div class="gameDiv"style="background-color:rgb({{red}},{{green}},{{blue}})">
                 </div>
         </div>
 <br>
-        <div class="colorbar">
+        <div class="colorBar">
                 <div style="color:red">
                 <input type="range" min="0" max="255" ng-model="red">{{red}}</input><br>
                 </div>
@@ -35,9 +35,9 @@
                 </div>
         </div>
 <br>
-        <div class="gamebtnWrapper">
-        <input type="button" class="btn btn-warning gamebt"ng-click="generateValue()" value="Generate!">
-        <input type="button" class="btn btn-primary gamebt"ng-click="submitValue()" value="Check!">
+        <div class="gameBtnWrapper">
+        <input type="button" class="btn btn-warning gameBtn"ng-click="generateValue()" value="Generate!">
+        <input type="button" class="btn btn-primary gameBtn"ng-click="submitValue()" value="Check!">
         <div class="btn btn-success showAns"ng-click="showAnswer()">
         <p class="showSpan top">Did you try your best?</p>
         <p class="showSpan bottom">Show Answer!</p>

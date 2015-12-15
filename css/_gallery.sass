@@ -1,0 +1,61 @@
+//Define transition mixin
+=transition($property, $duration, $timeFn, $delay:0)
+  -webkit-transition: $property $duration $timeFn $delay
+  -moz-transition: $property $duration $timeFn $delay
+  transition: $property $duration $timeFn $delay
+
+//Define border-image mixin
+=border-img($query)
+  -moz-border-image: $query
+  -webkit-border-image: $query
+  -o-border-image: $query
+  border-image: $query
+
+//Center block mixin
+=center-block($width, $margin:0)
+  display: block
+  width: $width
+  margin: $margin auto
+
+//Media Query mixin
+=media($query,$value)
+  @media screen and ($query: $value)
+    @content
+
+div.gallery_wrapper
+  +center-block(80%)
+
+div.galleryIntro
+  background: url("../../image/galleryback1.jpg")
+  font-weight: bold
+  padding: 20px
+  border: 14px solid
+  +border-img(url(../../image/border1.png) 34 27 27 repeat)
+  ul
+    font-size: 1.2em
+  h1
+    text-align: center
+    color: yellow
+    text-shadow: 1px 1px 2px black
+    margin-bottom: 30px
+    cursor: pointer
+
+h2.welcome
+  border-bottom: 2px solid lightgray
+  margin-bottom: 20px
+  padding-bottom: 10px
+
+img.gallery_sign
+  width: 100px
+  height: 100px
+  padding: 10px
+
+img.gallery_enter
+  +center-block(80%)
+
+button.fullScreen, button.borderView
+  margin-right: 20px
+
++media(max-width, 768px)
+  div.gallery_wrapper
+    width: 100%
