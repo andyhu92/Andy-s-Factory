@@ -1,8 +1,8 @@
 //Define transition mixin
-=transition($property, $duration, $timeFn, $delay:0)
-  -webkit-transition: $property $duration $timeFn $delay
-  -moz-transition: $property $duration $timeFn $delay
-  transition: $property $duration $timeFn $delay
+=transition($query)
+  -webkit-transition: $query
+  -moz-transition: $query
+  transition: $query
 
 //Center block mixin
 =center-block($width, $margin:0)
@@ -72,7 +72,7 @@ footer
     margin-top: 5px
   a, &:hover
     text-decoration: none
-    +transition(all,0.5s,ease-in-out)
+    +transition(all 0.5s ease-in-out)
     margin-bottom: 5px
   a.backToTop
     +center-block(30%,20px)

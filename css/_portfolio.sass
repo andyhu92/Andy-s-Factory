@@ -1,9 +1,9 @@
 /* Portfolio */
 //Define transition mixin
-=transition($property, $duration, $timeFn, $delay:0)
-  -webkit-transition: $property $duration $timeFn $delay
-  -moz-transition: $property $duration $timeFn $delay
-  transition: $property $duration $timeFn $delay
+=transition($query)
+  -webkit-transition: $query
+  -moz-transition: $query
+  transition: $query
 
 //Center block mixin
 =center-block($width, $margin:0)
@@ -33,9 +33,9 @@ div.portfolio
     height: auto
   h2
     text-align: left
-    +transition(all,0.3s,ease-in-out)
-  &:hover
-    letter-spacing: 1px
+    +transition(all 0.3s linear)
+    &:hover
+      letter-spacing: 1px
 
 +media(max-width, 768px)
   div.portfolio img

@@ -1,8 +1,8 @@
 //Define transition mixin
-=transition($property, $duration, $timeFn, $delay:0)
-  -webkit-transition: $property $duration $timeFn $delay
-  -moz-transition: $property $duration $timeFn $delay
-  transition: $property $duration $timeFn $delay
+=transition($query)
+  -webkit-transition: $query
+  -moz-transition: $query
+  transition: $query
 
 //Center block mixin
 =center-block($width, $margin:0)
@@ -59,20 +59,20 @@ input[type=range]
   height: 70px
   font-size: 2em
   margin: 1%
-  +transition(all, 0.4s, ease-in-out)
+  +transition(all 0.4s ease-in-out)
 
 .showAns
   width: 100%
   height: 34px
   margin-top: 5px
   text-align: center
-  +transition(all, 0.4s, ease-in-out)
+  +transition(all 0.4s ease-in-out)
   position: relative
   overflow: hidden
 
 .showSpan
   text-align: center
-  +transition(all, 0.4s, ease-in-out)
+  +transition(all 0.4s ease-in-out)
 
 #mushroom
   display: none
