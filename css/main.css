@@ -164,6 +164,24 @@ div.intro_other {
     width: 180px;
     height: 180px; }
 
+div.intro_art img {
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out; }
+  div.intro_art img:hover {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+div.intro_game img {
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out; }
+  div.intro_game img:hover {
+    -ms-transform: scale(1.25, 1);
+    -webkit-transform: scale(1.25, 1);
+    transform: scale(1.25, 1); }
+
 /* Portfolio */
 div.portfolio_wrapper {
   width: 80%;

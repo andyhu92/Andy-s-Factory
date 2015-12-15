@@ -3,6 +3,25 @@
   width: $width
   margin: $margin auto
 
+//Define transition mixin
+=transition($query)
+  -webkit-transition: $query
+  -moz-transition: $query
+  transition: $query
+
+//Transform mixin
+=transform($transform)
+  -ms-transform: $transform
+  -webkit-transform: $transform
+  transform: $transform
+
+//Rotate mixin
+=rotate($deg)
+  +transform(rotate(#{$deg}deg))
+
+//Scale mixin
+=scale($x, $y)
+  +transform(scale($x,$y))
 /* -- intro -- */
 div.intro
   text-align: center
@@ -20,3 +39,15 @@ div.intro_other
   img
     width: 180px
     height: 180px
+div.intro_art
+  img
+    +transition(transform 0.5s ease-in-out)
+    &:hover
+      +rotate(180)
+div.intro_game
+  img
+    +transition(transform 0.5s ease-in-out)
+    &:hover
+      +scale(1.25,1)
+      
+    
