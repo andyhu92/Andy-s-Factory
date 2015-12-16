@@ -72,14 +72,14 @@ var interval;
  }
 
 //gallery effect
-  $(".mainBody").on("click",".introphoto h1",function(){
+  $(".mainBody").on("click","#galleryTitle",function(){
     $("body").css("background-image","url('image/gallery_wall.jpg')");
-    $("div.introphoto h1").text("Famous Gallery");
-  	$("div.introphoto h2.welcome").remove();
-  	$("div.introphoto h1 span").remove();
-  	$("div.introphoto h1").animate({fontSize:"60px"},'fast');
+    $("#galleryTitle").text("Famous Gallery");
+  	$("div.galleryIntro h2.welcome").remove();
+  	$("div.galleryIntro h1 span").remove();
+  	$("div.galleryIntro h1").animate({fontSize:"60px"},'fast');
   	var text="<h2 class='welcome' style='text-align:center'><em> Welcome! </em></h2>"
-  	$("div.introphoto h1").after(text);
+  	$("div.galleryIntro h1").after(text);
   	$("div.sign").animate({marginLeft:"28%"},'fast');
   });
   

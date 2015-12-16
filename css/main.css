@@ -332,6 +332,7 @@ div.gallery_wrapper {
 
 div.galleryIntro {
   background: url("../../image/galleryback1.jpg");
+  background-size: cover;
   font-weight: bold;
   padding: 20px;
   border: 14px solid;
