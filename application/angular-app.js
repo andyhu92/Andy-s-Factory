@@ -4,28 +4,23 @@
   $routeProvider.when('/index.html',{
     templateUrl:"template/intro.html"
   }).when('/game',{
-    templateUrl: "template/game.html"
+    templateUrl: "template/game.html",
+    controller:"gameCtrl"
   }).when('/about',{
-  	templateUrl: "template/about.html"
+  	templateUrl: "template/about.html",
+    controller:"aboutCtrl"
   }).when('/gallery',{
-  	templateUrl: "template/gallery.html"
+  	templateUrl: "template/gallery.html",
+    controller: "galleryCtrl"
   }).when('/portfolio',{
-  	templateUrl: "template/portfolio.html"
+  	templateUrl: "template/portfolio.html",
+    controller: "portfolioCtrl"
   })
   .otherwise({
 redirectTo: "index.html"
 });
 });        
 })(window.angular);
-angular.module('myApp').directive("googleMap",function(){
-  return{
-    restrict:'E',
-    templateUrl: 'template/googlemap.html',
-    link:function(){
-      initialize();
-      }
-       
-  }
-})
+
 
 

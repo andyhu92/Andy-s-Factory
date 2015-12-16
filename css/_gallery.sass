@@ -1,8 +1,8 @@
 //Define transition mixin
-=transition($property, $duration, $timeFn, $delay:0)
-  -webkit-transition: $property $duration $timeFn $delay
-  -moz-transition: $property $duration $timeFn $delay
-  transition: $property $duration $timeFn $delay
+=transition($query)
+  -webkit-transition: $query
+  -moz-transition: $query
+  transition: $query
 
 //Define border-image mixin
 =border-img($query)

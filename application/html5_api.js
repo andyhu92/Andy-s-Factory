@@ -1,4 +1,9 @@
-function Donate() {
+(function(){
+    //Donate module for gallery
+    this.Donate = this.Donate || {};
+    var ns = this.Donate;
+    
+    ns.startDonate = function() {
     var money = Math.floor(1000*(Math.random()));
     document.getElementById("donate").innerHTML = "<b>Thanks for your donation! </b>"+" $"+money;
     if(typeof(Storage) !== "undefined") {
@@ -12,7 +17,7 @@ function Donate() {
         document.getElementById("donate_number").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
-function cancelDonate(){
+     ns.cancelDonate = function(){
       if(typeof(Storage) !== "undefined") {
           localStorage.removeItem("donate_number");
           localStorage.donate_number = 0;
@@ -22,3 +27,5 @@ function cancelDonate(){
           document.getElementById("donate_number").innerHTML = "Sorry, your browser does not support web storage...";
       }
 }
+    
+}())
