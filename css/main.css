@@ -129,9 +129,8 @@ div.navigation_small ul {
         background-color: white; }
 
 @media screen and (max-width: 768px) {
-  #factory {
-    width: 200px;
-    height: 125px; }
+  div.mainBody {
+    width: 95%; }
 
   div.intro {
     font-weight: bold; }
@@ -182,6 +181,16 @@ div.intro_game img {
     -webkit-transform: scale(1.25, 1);
     transform: scale(1.25, 1); }
 
+@media screen and (max-width: 768px) {
+  #factory {
+    width: 80%;
+    height: 240px; }
+
+  div.intro img {
+    width: 70%; }
+
+  div.intro_other img {
+    width: 40%; } }
 /* Portfolio */
 div.portfolio_wrapper {
   width: 80%;
@@ -208,6 +217,10 @@ div.portfolio {
       letter-spacing: 1px; }
 
 @media screen and (max-width: 768px) {
+  div.portfolio_wrapper {
+    width: 100%;
+    margin: 0 auto; }
+
   div.portfolio img {
     display: none; } }
 /* Game */
@@ -303,7 +316,8 @@ input[type=range] {
     top: -30px; } }
 @media screen and (max-width: 768px) {
   div.colorPicker {
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto; }
 
   .gameInstruction ol {
     width: 100%;

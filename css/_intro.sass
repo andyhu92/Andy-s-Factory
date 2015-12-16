@@ -22,6 +22,12 @@
 //Scale mixin
 =scale($x, $y)
   +transform(scale($x,$y))
+    
+//Media Query mixin
+=media($query,$value)
+  @media screen and ($query: $value)
+    @content
+    
 /* -- intro -- */
 div.intro
   text-align: center
@@ -49,5 +55,12 @@ div.intro_game
     +transition(transform 0.5s ease-in-out)
     &:hover
       +scale(1.25,1)
-      
-    
+     
++media(max-width, 768px)
+  #factory
+    width: 80%
+    height: 240px
+  div.intro img
+    width: 70%
+  div.intro_other img
+    width: 40%
