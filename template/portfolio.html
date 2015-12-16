@@ -1,4 +1,4 @@
-<div ng-controller="portfolioCtrl" class="portfolio_wrapper">
+<div class="portfolio_wrapper">
 
 <div class="portfolio" ng-repeat="item in list" av-animation="{{item.view}}" ng-class="{'fadeInLeft':$first,'fadeInRight':$index==1,'aniview':$index>1,'animated':$index<=1}">
 	<img ng-src="{{item.src}}" alt="logo" class="img-rounded">
